@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Micro-Budget</title>
+    <style>
+        :root {
+            --primary: #195279;
+            --primary-dark: #0f3550;
+            --surface: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border: #e2e8f0;
+            --accent-green: #10b981;
+            --accent-green-bg: #ecfdf5;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --primary: #38bdf8;
+                --primary-dark: #0284c7;
+                --surface: #0b1120;
+                --card-bg: #1e293b;
+                --text-main: #f1f5f9;
+                --text-muted: #94a3b8;
+                --border: #334155;
+                --accent-green: #34d399;
+                --accent-green-bg: #064e3b;
+            }
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--surface);
+            color: var(--text-main);
+            line-height: 1.65;
+            padding: 24px 16px;
+        }
+
+        .container {
+            max-width: 780px;
+            margin: 0 auto;
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 40px 32px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        header {
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 24px;
+            margin-bottom: 32px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-green-bg);
+            color: var(--accent-green);
+            font-size: 13px;
+            font-weight: 700;
+            padding: 4px 10px;
+            border-radius: 20px;
+            margin-bottom: 12px;
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            color: var(--text-main);
+            margin-bottom: 8px;
+            letter-spacing: -0.02em;
+        }
+
+        .meta {
+            font-size: 14px;
+            color: var(--text-muted);
+        }
+
+        h2 {
+            font-size: 19px;
+            font-weight: 700;
+            color: var(--text-main);
+            margin-top: 32px;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        p {
+            margin-bottom: 16px;
+            color: var(--text-main);
+            font-size: 15px;
+        }
+
+        ul {
+            margin: 0 0 18px 24px;
+            color: var(--text-main);
+            font-size: 15px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        strong {
+            color: var(--text-main);
+        }
+
+        .highlight-box {
+            background-color: var(--surface);
+            border-left: 4px solid var(--primary);
+            border-radius: 0 8px 8px 0;
+            padding: 16px 20px;
+            margin: 20px 0;
+            font-size: 14.5px;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        a:hover {
+            opacity: 0.85;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 13px;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span class="badge">100% On-Device Privacy</span>
+            <h1>Privacy Policy for Micro-Budget</h1>
+            <p class="meta"><strong>Effective Date:</strong> October 20, 2026 | <strong>App Version:</strong> 2.0</p>
+        </header>
+
+        <section>
+            <h2>1. Overview</h2>
+            <p>
+                <strong>Micro-Budget</strong> ("we", "our", or "the app") is designed with a fundamental commitment to privacy and data autonomy. We believe personal financial logs, daily expenses, and income transactions should remain strictly private to the device owner.
+            </p>
+            <div class="highlight-box">
+                <strong>Core Privacy Principle:</strong> Micro-Budget stores all transaction records exclusively on your local device. We do not maintain user accounts, do not collect personal identities, and do not transmit your financial transactions to any external cloud database or server.
+            </div>
+        </section>
+
+        <section>
+            <h2>2. Information We Store Locally</h2>
+            <p>
+                When you use Micro-Budget to track your daily cash flow, the following information is entered by you and saved exclusively within an on-device SQLite database managed by the Android Room Persistence Library:
+            </p>
+            <ul>
+                <li><strong>Transaction Details:</strong> Amount, transaction type (income or expense), spending category, optional memo/note, and creation timestamp.</li>
+                <li><strong>User Preferences:</strong> Your selected currency code and formatting preference (stored locally in Android SharedPreferences).</li>
+            </ul>
+            <p>
+                This data resides entirely within your device's isolated app sandbox storage and is never uploaded to any remote server operated by Micro-Budget.
+            </p>
+        </section>
+
+        <section>
+            <h2>3. Third-Party Services and Advertising</h2>
+            <p>
+                To support free distribution, Micro-Budget displays mobile advertisements powered by <strong>Google AdMob</strong> (Google Mobile Ads SDK).
+            </p>
+            <p>
+                Google AdMob may collect and process certain device information in accordance with Google's Privacy Policy. This may include:
+            </p>
+            <ul>
+                <li>Google Advertising ID (GAID / AAID)</li>
+                <li>Device make, model, screen dimensions, and operating system version</li>
+                <li>General location (derived from IP address)</li>
+                <li>Diagnostic, performance, and ad interaction telemetry</li>
+            </ul>
+            <p>
+                You can review Google's privacy practices and learn how Google handles advertising data by visiting:
+            </p>
+            <ul>
+                <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer">Google Privacy Policy</a></li>
+                <li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener noreferrer">Google Advertising Technologies & Choices</a></li>
+            </ul>
+            <p>
+                You may opt out of personalized ads or reset your advertising identifier at any time through your Android device settings under <em>Settings &rarr; Google &rarr; Ads</em>.
+            </p>
+        </section>
+
+        <section>
+            <h2>4. Permissions Used by the App</h2>
+            <p>
+                Micro-Budget requests only the minimal permissions required for network connectivity and advertisement rendering:
+            </p>
+            <ul>
+                <li><code>android.permission.INTERNET</code>: Required exclusively to communicate with Google AdMob servers to display advertisements.</li>
+                <li><code>android.permission.ACCESS_NETWORK_STATE</code>: Required to verify active network connectivity before requesting advertisements.</li>
+            </ul>
+            <p>
+                Micro-Budget does <strong>not</strong> request sensitive permissions such as Contacts, SMS, Phone State, Precise Location, Microphone, Camera, or Broad External Storage.
+            </p>
+        </section>
+
+        <section>
+            <h2>5. Data Control, Retention, and Deletion</h2>
+            <p>
+                You have full control over your financial records at all times:
+            </p>
+            <ul>
+                <li><strong>Single Entry Deletion:</strong> Tap the trash icon next to any transaction in the dashboard feed to permanently delete that entry from the local ledger.</li>
+                <li><strong>Bulk Data Reset:</strong> Use the "Clear All Transactions" option in Settings to wipe all stored ledger records simultaneously.</li>
+                <li><strong>Full Removal:</strong> Uninstalling the application or selecting "Clear Data / Storage" under Android App Info will permanently and irreversibly erase all records and preferences from your device.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>6. Data Export (CSV)</h2>
+            <p>
+                The app provides an on-demand CSV export feature. When triggered, the CSV file is generated locally on your device and handed to the Android system share sheet. The file is only sent to applications or contacts that you explicitly choose.
+            </p>
+        </section>
+
+        <section>
+            <h2>7. Children's Privacy</h2>
+            <p>
+                Micro-Budget is intended for general audiences and does not knowingly collect or solicit any personal information from children under the age of 13.
+            </p>
+        </section>
+
+        <section>
+            <h2>8. Changes to This Policy</h2>
+            <p>
+                We may periodically update this Privacy Policy. Any modifications will be posted here with an updated "Effective Date". Continued use of the application after changes indicates acceptance of the updated policy.
+            </p>
+        </section>
+
+        <section>
+            <h2>9. Contact Us</h2>
+            <p>
+                If you have questions, feedback, or concerns regarding this Privacy Policy or your data, please contact the developer via the official support listing in the Google Play Store.
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Micro-Budget. All rights reserved.</p>
+            <p>Package: com.aistudio.microbudget.czmq</p>
+        </footer>
+    </div>
+</body>
+</html>
